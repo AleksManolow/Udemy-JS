@@ -225,3 +225,31 @@ function printBookInfo({title, author, year = 'year unknown'}) {
 
 printBookInfo({ title: 'Algorithms', author: 'Robert Sedgewick' });
 printBookInfo({ title: 'Algorithms', author: 'Robert Sedgewick', year: '2011' });
+
+
+//The Spread Operator
+//3.1
+const bookAuthors = [...books[0].author, ...books[1].author];
+console.log(bookAuthors);
+
+//3.2
+function spellWord(word) {
+  console.log(...word);
+}
+
+spellWord('JavaScript');
+
+//Rest Pattern and Parameters
+//4.1
+const [mainKeyword, ...rest] = books[0].keywords;
+
+//4.2
+const {publisher: bookPublisher, ...restOfTheBook } = books[1]; 
+
+//4.3
+function printBookAuthorsCount (title, ...authors)
+{
+  console.log(`The book "${title}" has ${authors.length} author`)
+}
+
+printBookAuthorsCount('Algorithms', 'Robert Sedgewick', 'Kevin Wayne');
