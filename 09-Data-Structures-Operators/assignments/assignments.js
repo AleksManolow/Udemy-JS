@@ -284,3 +284,77 @@ for (let i = 0; i < books.length; i++) {
 for (let i = 0; i < books.length; i++) {
   books[i].highlighted &&= !(books[i].thirdParty.goodreads.rating < 4.2);
 }
+
+//Looping Arrays: The for-of Loop
+//8.1
+let pageSum = 0;
+
+for (let book of books) {
+  pageSum += book.pages;
+}
+
+//8.2
+const allAuthors = [];
+
+for(let book of books)
+{
+  typeof book.author === 'string' ? allAuthors.push(book.author) : allAuthors.push(...book.author);
+}
+
+console.log(allAuthors);
+
+//8.3
+for(let [num, el] of allAuthors.entries())
+  console.log(`${num + 1}. ${el}`);
+
+//Enhanced Object Literals
+//9.1
+const bookData = [
+  ['title', 'Computer Networking: A Top-Down Approach'],
+  ['author', ['James F. Kurose', 'Keith W. Ross']],
+  ['publisher', 'Addison Wesley'],
+];
+
+const newBook = {
+  [bookData[0][0]]: bookData[0][1],
+  [bookData[1][0]]: bookData[1][1],
+  [bookData[2][0]]: bookData[2][1]
+};
+
+//9.2
+const pages = 880;
+
+const newBook2 = {
+  title: 'The C Programming Language',
+  author: ['Brian W. Kernighan', 'Dennis M. Ritchie'],
+  pages
+}
+
+//Optional Chaining (?.)
+//10.1
+function getFirstKeyword (book)
+{
+  return book.keywords?.[0];
+}
+
+console.log(getFirstKeyword(books[1]));
+
+//Looping Objects: Object Keys, Values and Entries
+//11.1
+const entries = [];
+for(let key of Object.keys(books[0].thirdParty.goodreads))
+{
+  entries.push([key]);
+}
+
+//11.2
+for (const [index, value] of Object.values(books[0].thirdParty.goodreads).entries()) {
+  entries[index].push(value);
+}
+
+//11.3
+const entries2 = Object.entries(books[0].thirdParty.goodreads);
+
+//11.4
+console.log(entries);
+console.log(entries2);
