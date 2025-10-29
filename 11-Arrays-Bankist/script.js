@@ -78,7 +78,28 @@ const displayMovements = function(movements){
   });
 }
 
-displayMovements(account1.movements);
+const calcDisplayBalance = function(movements){
+  const balance = movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${balance}€`;
+}
+
+const calcDisplaySummary = function(acc){
+  const incomes = acc.movements.filter(mov => mov > 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumIn.textContent = `${incomes}€`;
+
+  const outcomes = acc.movements.filter(mov => mov < 0)
+    .reduce((acc, mov) => acc + mov, 0);
+    
+  labelSumOut.textContent = `${Math.abs(outcomes)}€`;
+
+  const interest = acc.movements.filter(mov => mov > 0)
+    .map(deposit => (deposit * acc.interestRate) / 100)
+    .reduce((acc, int) => acc + int, 0);
+
+  labelSumInterest.textContent = `${interest}€`;
+}
+
 
 const createUsernames = function(accs) { 
 
@@ -91,13 +112,36 @@ const createUsernames = function(accs) {
   }); 
 }
 
-const calcDisplayBalance = function(movements){
-  const balance = movements.reduce((acc, mov) => acc + mov, 0);
-  labelBalance.textContent = `${balance} EUR`;
-}
+createUsernames(accounts);
 
-calcDisplayBalance(account1.movements);
+let currentAccount;
 
+btnLogin.addEventListener('click', function(e){
+  e.preventDefault();
+
+  currentAccount = accounts.find(acc => acc.username === inputLoginUsername.value)
+
+  if(currentAccount?.pin === Number(inputLoginPin.value)){
+
+    // Desplay UI and message
+    labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]}`;
+    
+    containerApp.style.opacity = 100;
+
+    //Clear input fields
+    inputLoginUsername.value = inputLoginPin.value = '';
+    inputLoginPin.blur();
+
+    // Desplay movements
+    displayMovements(currentAccount.movements);
+
+    // Desplay balance
+    calcDisplayBalance(currentAccount.movements);
+
+    // Desplay summary
+    calcDisplaySummary(currentAccount);
+  }
+})
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
