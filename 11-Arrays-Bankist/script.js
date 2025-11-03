@@ -70,7 +70,7 @@ const displayMovements = function(movements){
     const html = `
       <div class="movements__row">
           <div class="movements__type movements__type--${type}">${i + 1} ${type}</div>
-          <div class="movements__value">${mov}</div>
+          <div class="movements__value">${mov}€</div>
       </div>
     `;
 
@@ -146,7 +146,7 @@ btnLogin.addEventListener('click', function(e){
      
     updateUI(currentAccount);
   }
-})
+});
 
 btnTransfer.addEventListener('click', function(e){
   e.preventDefault();
@@ -166,6 +166,30 @@ btnTransfer.addEventListener('click', function(e){
   }
 });
 
+btnClose.addEventListener('click', function(e){
+  e.preventDefault();
+
+  if(inputCloseUsername.value === currentAccount.username
+    && Number(inputClosePin.value) === currentAccount.pin){
+    
+      const index = accounts.findIndex(acc => acc.username === currentAccount.username); 
+      accounts.splice(index, 1);
+      containerApp.style.opacity = 100;
+  }
+});
+
+btnLoan.addEventListener('click', function(e){
+  e.preventDefault();
+
+  const amount = Number(inputLoanAmount.value);
+
+  if(amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)){
+    currentAccount.movements.push(amount);
+
+    updateUI(currentAccount);
+  }
+  inputLoanAmount.value = ''; 
+});
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
