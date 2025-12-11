@@ -29,3 +29,20 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const secrion1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', function(e){
+
+  //Long way
+  //const s1coords = secrion1.getBoundingClientRect();
+  // window.scrollTo({
+  //   left: secrion1.left + window.pageXOffset,
+  //   top: s1coords.top + window.pageYOffset,
+  //   behavior: 'smooth'
+  // });
+
+  secrion1.scrollIntoView({behavior: 'smooth'});
+
+});
