@@ -2,8 +2,6 @@ import icons from 'url:../img/icons.svg';
 import 'core-js/stable';
 import 'regenerator-runtime';
 
-console.log(icons);
-
 const recipeContainer = document.querySelector('.recipe');
 
 const timeout = function (s) {
@@ -32,9 +30,13 @@ const renderSoinner = function(parentEl){
 
 const showRecipe = async function () {
   try {
+    const id = window.location.hash.slice(1);
+
+    if(!id) return;
+
     //1) Loading recipe
     renderSoinner(recipeContainer);
-    const res = await fetch('https://forkify-api.jonas.io/api/v2/recipes/5ed6604591c37cdc054bc886');
+    const res = await fetch(`https://forkify-api.jonas.io/api/v2/recipes/${id}`);
     const data = await res.json();
 
     if (!res.ok) throw new Error(`${data.massage} (${res.status})`)
@@ -148,7 +150,11 @@ const showRecipe = async function () {
   catch (err) {
     alert(err);
   }
-}
+};
 
-showRecipe();
+['hashchange', 'load'].forEach(element => {
+  window.addEventListener(element, showRecipe);
+});
 
+// window.addEventListener('hashchange', showRecipe);
+// window.addEventListener('load', showRecipe);
