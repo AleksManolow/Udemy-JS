@@ -4,6 +4,9 @@ import Fraction from 'fraction.js';
 class RecipeView {
   #parentElement = document.querySelector('.recipe');
   #data;
+  #errorMessage = 'We couldn not find that recipe. Please try another one!';
+  #message = ''
+
 
   render(data) {
     this.#data = data;
@@ -16,7 +19,7 @@ class RecipeView {
     this.#parentElement.innerHTML = '';
   }
 
-  renderSoinner = function () {
+  renderSoinner() {
     const markup = `
         <div class="spinner">
           <svg>
@@ -24,8 +27,40 @@ class RecipeView {
           </svg>
         </div>`
 
-    this.#parentElement.innerHTML = '';
+    this.#clear()
     this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+  }
+
+  renderError(massage = this.#errorMessage) {
+    const markup = `<div class="error">
+            <div>
+              <svg>
+                <use href="src/img/icons.svg#icon-alert-triangle"></use>
+              </svg>
+            </div>
+            <p>${massage}</p>
+          </div>`
+
+    this.#clear()
+    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+  }
+
+  // renderMassage(massage = this.#errorMessage) {
+  //   const markup = `<div class="message">
+  //         <div>
+  //           <svg>
+  //             <use href="src/img/icons.svg#icon-smile"></use>
+  //           </svg>
+  //         </div>
+  //         <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+  //       </div>`
+
+  //   this.#clear()
+  //   this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+  // }
+
+  addHandlerRender(handler) {
+    ['hashchange', 'load'].forEach(el => window.addEventListener(el, handler));
   }
 
   #generateMarkup() {
@@ -106,8 +141,7 @@ class RecipeView {
                 `;
   }
 
-  #generateMarkupIngredient(ing)
-  {
+  #generateMarkupIngredient(ing) {
     return `
                       <li class="recipe__ingredient">
                         <svg class="recipe__icon">
