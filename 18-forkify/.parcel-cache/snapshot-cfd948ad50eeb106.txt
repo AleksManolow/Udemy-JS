@@ -23,7 +23,7 @@
 78D:\programing\Udemy-JS\18-forkify\node_modules\core-js\features\number\virtual134382783179117496 1
 62D:\programing\Udemy-JS\18-forkify\forkify-flowchart-part-1.png133783042770000000 0
 86D:\programing\Udemy-JS\18-forkify\node_modules\core-js\actual\dom-collections\index.js134382783172535794 0
-38D:\programing\Udemy-JS\18-forkify\dist134384663236664014 1
+38D:\programing\Udemy-JS\18-forkify\dist134385425902662882 1
 79D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\es.array.sort.js134382783166541268 0
 122D:\programing\Udemy-JS\18-forkify\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\lib\filesystem.js134382697697704842 0
 86D:\programing\Udemy-JS\18-forkify\node_modules\caniuse-lite\data\features\proximity.js134382697702877842 0
@@ -72,7 +72,7 @@
 69D:\programing\Udemy-JS\18-forkify\node_modules\caniuse-lite\README.md134382697703847854 0
 46D:\programing\Udemy-JS\18-forkify\node_modules134384635953537078 1
 70D:\programing\Udemy-JS\18-forkify\node_modules\core-js\es\math\sinh.js134382783177485662 0
-57D:\programing\Udemy-JS\18-forkify\dist\icons.0809ef97.svg134384660412467133 0
+57D:\programing\Udemy-JS\18-forkify\dist\icons.0809ef97.svg134385425785049227 0
 77D:\programing\Udemy-JS\18-forkify\node_modules\core-js\es\reflect\own-keys.js134382783175796160 0
 77D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\json\stringify.js134382783178367500 0
 73D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\array\with.js134382783180917337 0
@@ -188,7 +188,7 @@
 71D:\programing\Udemy-JS\18-forkify\node_modules\safe-buffer\package.json134382697697454846 0
 77D:\programing\Udemy-JS\18-forkify\node_modules\core-js\es\typed-array\keys.js134382783174619383 0
 81D:\programing\Udemy-JS\18-forkify\node_modules\core-js\stable\array\virtual\at.js134382783164363629 0
-54D:\programing\Udemy-JS\18-forkify\src\js\controller.js134384663030930910 0
+54D:\programing\Udemy-JS\18-forkify\src\js\controller.js134385416821900112 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\symbol\metadata-key.js134382783175393525 0
 93D:\programing\Udemy-JS\18-forkify\node_modules\@swc\helpers\src\_class_private_method_set.mjs134382697702042664 0
 78D:\programing\Udemy-JS\18-forkify\node_modules\core-js\stable\iterator\find.js134382783170152667 0
@@ -210,7 +210,7 @@
 88D:\programing\Udemy-JS\18-forkify\node_modules\core-js\actual\instance\to-well-formed.js134382783179660911 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\es.regexp.escape.js134382783167393346 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\esnext.map.every.js134382783168520228 0
-49D:\programing\Udemy-JS\18-forkify\src\js\model.js134384651674195883 0
+49D:\programing\Udemy-JS\18-forkify\src\js\model.js134385426094695360 0
 72D:\programing\Udemy-JS\18-forkify\node_modules\caniuse-lite\package.json134382697703837821 0
 86D:\programing\Udemy-JS\18-forkify\node_modules\utility-types\dist\utility-types.js.map134382697698382675 0
 86D:\programing\Udemy-JS\18-forkify\node_modules\core-js\proposals\map-upsert-stage-2.js134382783174977078 0
@@ -229,7 +229,7 @@
 98D:\programing\Udemy-JS\18-forkify\node_modules\react-refresh\cjs\react-refresh-babel.production.js134382697697714852 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\async-iterator\drop.js134382783166016807 0
 89D:\programing\Udemy-JS\18-forkify\node_modules\caniuse-lite\data\features\css-rrggbbaa.js134382697700952615 0
-60D:\programing\Udemy-JS\18-forkify\src\js\views\recipeView.js134384663236306461 0
+60D:\programing\Udemy-JS\18-forkify\src\js\views\recipeView.js134385415713607367 0
 53D:\programing\Udemy-JS\18-forkify\src\img\favicon.png133783042770000000 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\es.iterator.some.js134382783166841275 0
 78D:\programing\Udemy-JS\18-forkify\node_modules\update-browserslist-db\index.js134382697697624864 0
@@ -702,7 +702,7 @@
 68D:\programing\Udemy-JS\18-forkify\node_modules\@parcel\graph\LICENSE134382697697174851 0
 73D:\programing\Udemy-JS\18-forkify\node_modules\v8-compile-cache\README.md134382697697664887 0
 66D:\programing\Udemy-JS\18-forkify\node_modules\core-js\stable\json134382783179534365 1
-49D:\programing\Udemy-JS\18-forkify\dist\index.html134384660412281506 0
+49D:\programing\Udemy-JS\18-forkify\dist\index.html134385425784737697 0
 78D:\programing\Udemy-JS\18-forkify\node_modules\caniuse-lite\data\regions\EE.js134382697701372616 0
 81D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\iterator\zip-keyed.js134382783180967363 0
 103D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\es.async-disposable-stack.constructor.js134382783166591252 0
@@ -1454,7 +1454,7 @@
 96D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\esnext.async-iterator.for-each.js134382783168274469 0
 64D:\programing\Udemy-JS\18-forkify\node_modules\readdirp\index.js134382699359897447 0
 107D:\programing\Udemy-JS\18-forkify\node_modules\msgpackr-extract\node_modules\detect-libc\lib\detect-libc.js134382697697414870 0
-62D:\programing\Udemy-JS\18-forkify\dist\18-forkify.f7626f62.css134384660412334614 0
+62D:\programing\Udemy-JS\18-forkify\dist\18-forkify.f7626f62.css134385425784950502 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\node-releases\data\release-schedule134382697697842646 1
 63D:\programing\Udemy-JS\18-forkify\node_modules\readdirp\LICENSE134382699359867450 0
 78D:\programing\Udemy-JS\18-forkify\node_modules\@parcel\core\test\utils.test.js134382697700882620 0
@@ -2168,7 +2168,7 @@
 87D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\esnext.set.difference.js134382783168845437 0
 95D:\programing\Udemy-JS\18-forkify\node_modules\lightningcss\node_modules\detect-libc\index.d.ts134382697698152645 0
 87D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\es.symbol.unscopables.js134382783167751740 0
-57D:\programing\Udemy-JS\18-forkify\dist\icons.21bad73c.svg134384660412487135 0
+57D:\programing\Udemy-JS\18-forkify\dist\icons.21bad73c.svg134385425784852878 0
 79D:\programing\Udemy-JS\18-forkify\node_modules\core-js\stable\string\italics.js134382783174121670 0
 88D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\array\virtual\to-reversed.js134382783179247495 0
 97D:\programing\Udemy-JS\18-forkify\node_modules\lightningcss\node_modules\detect-libc\package.json134382697697952638 0
@@ -3817,7 +3817,7 @@
 79D:\programing\Udemy-JS\18-forkify\node_modules\core-js\modules\web.url.parse.js134382783180779735 0
 78D:\programing\Udemy-JS\18-forkify\node_modules\core-js\internals\a-callable.js134382783163473640 0
 83D:\programing\Udemy-JS\18-forkify\node_modules\core-js\es\string\from-code-point.js134382783170792973 0
-56D:\programing\Udemy-JS\18-forkify\dist\logo.726d37a8.png134384660412417160 0
+56D:\programing\Udemy-JS\18-forkify\dist\logo.726d37a8.png134385425784930494 0
 103D:\programing\Udemy-JS\18-forkify\node_modules\@parcel\package-manager\test\fixtures\packages\peers-2.0134382697699392629 1
 84D:\programing\Udemy-JS\18-forkify\node_modules\core-js\internals\iterator-indexed.js134382783174240036 0
 79D:\programing\Udemy-JS\18-forkify\node_modules\core-js\internals\a-data-view.js134382783163483649 0
@@ -4485,7 +4485,7 @@
 81D:\programing\Udemy-JS\18-forkify\node_modules\@parcel\reporter-cli\src\render.js134382697698512696 0
 72D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\object\is.js134382783174061671 0
 84D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\object\iterate-values.js134382783174151684 0
-61D:\programing\Udemy-JS\18-forkify\dist\18-forkify.4a59a05f.js134384663236654009 0
+61D:\programing\Udemy-JS\18-forkify\dist\18-forkify.4a59a05f.js134385425902632721 0
 74D:\programing\Udemy-JS\18-forkify\node_modules\core-js\full\object\keys.js134382783174662168 0
 84D:\programing\Udemy-JS\18-forkify\node_modules\core-js\features\typed-array\every.js134382783169293868 0
 79D:\programing\Udemy-JS\18-forkify\node_modules\core-js\actual\instance\group.js134382783172014432 0
@@ -5188,7 +5188,7 @@
 68D:\programing\Udemy-JS\18-forkify\node_modules\@parcel\optimizer-svg134382697697654879 1
 85D:\programing\Udemy-JS\18-forkify\node_modules\core-js\features\instance\to-sorted.js134382783179327489 0
 84D:\programing\Udemy-JS\18-forkify\node_modules\core-js\features\instance\trim-end.js134382783179800914 0
-66D:\programing\Udemy-JS\18-forkify\dist\18-forkify.f7626f62.css.map134384660412354578 0
+66D:\programing\Udemy-JS\18-forkify\dist\18-forkify.f7626f62.css.map134385425784970465 0
 85D:\programing\Udemy-JS\18-forkify\node_modules\core-js\actual\set\is-disjoint-from.js134382783173556819 0
 85D:\programing\Udemy-JS\18-forkify\node_modules\core-js\features\instance\trim-left.js134382783179863627 0
 82D:\programing\Udemy-JS\18-forkify\node_modules\core-js\actual\iterator\to-array.js134382783178787488 0
@@ -7600,6 +7600,6 @@
 74D:\programing\Udemy-JS\18-forkify\node_modules\.bin\update-browserslist-db134382697703967825 0
 61D:\programing\Udemy-JS\18-forkify\dist\18-forkify.3464ddca.js134382766707793525 0
 65D:\programing\Udemy-JS\18-forkify\dist\18-forkify.3464ddca.js.map134382766707823526 0
-65D:\programing\Udemy-JS\18-forkify\dist\18-forkify.4a59a05f.js.map134384663236664014 0
+65D:\programing\Udemy-JS\18-forkify\dist\18-forkify.4a59a05f.js.map134385425902652733 0
 65D:\programing\Udemy-JS\18-forkify\dist\18-forkify.62406edb.js.map134382768228217623 0
-59D:\programing\Udemy-JS\18-forkify\dist\favicon.8b2f57bf.png134384660412447120 0
+59D:\programing\Udemy-JS\18-forkify\dist\favicon.8b2f57bf.png134385425784902918 0
