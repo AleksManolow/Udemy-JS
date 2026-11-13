@@ -3,19 +3,21 @@ import View from "./View";
 import icons from 'url:../../img/icons.svg';
 
 class ResultsView extends View {
-    _parentElement = document.querySelector('.results');
+  _parentElement = document.querySelector('.results');
 
-    _errorMessage = 'No recipes found for your query! Plase try again ;)';
-    _message = ''
+  _errorMessage = 'No recipes found for your query! Plase try again ;)';
+  _message = ''
 
-    _generateMarkup() {
-        return this._data.map(this._generateMarkupPrevire).join('')
-    }
+  _generateMarkup() {
+    return this._data.map(this._generateMarkupPrevire).join('')
+  }
 
-    _generateMarkupPrevire(result) {
-        return `
+  _generateMarkupPrevire(result) {
+    const id = window.location.hash.slice(1);
+
+    return `
         <li class="preview">
-            <a class="preview__link" href="#${result.id}">
+            <a class="preview__link ${result.id == id ? 'preview__link--active' : ''}" href="#${result.id}">
               <figure class="preview__fig">
                 <img src="${result.image}" alt="${result.title}" />
               </figure>
@@ -25,7 +27,7 @@ class ResultsView extends View {
               </div>
             </a>
         </li>`;
-    }
+  }
 }
 
 export default new ResultsView();
