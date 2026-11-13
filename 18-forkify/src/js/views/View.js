@@ -24,7 +24,7 @@ export default class View {
       const curEl = curElemets[i];
 
       // Update change TEXT
-      if(!newEl. isEqualNode(curEl) && newEl.firstChild.nodeValue.trim() !== ''){
+      if(!newEl. isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== ''){
         curEl.textContent = newEl.textContent;
       }
 
